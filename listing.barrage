@@ -1,0 +1,43 @@
+# Skill: Starfit
+
+> A Grok skill that grabs live Python headers by introspection, then welds bodies into a program and runs it.
+
+## Purpose
+Explain Starfit as a composer: look at real function heads, then write the bodies to match a goal. Source: fitzyracing1/skill-starfit.
+
+## How it works (plain English)
+1. Import a tool.
+2. Read its live header (name, version, signature).
+3. Weld a body that fits that header.
+4. Run the resulting program.
+
+## Key ideas
+- Introspection (ask the running language what a tool looks like)
+- Header (the name and shape of a function)
+- Weld (join a body onto that shape)
+
+## The actual code
+```
+# source: fitzyracing1/skill-starfit
+header = grab_header(tool)
+body = weld(header, goal)
+run(body)
+```
+
+## Line-by-line translation
+1. grab_header(tool) → “read the live shape of the tool”
+2. weld(header, goal) → “write a body that fits both”
+3. run(body) → “execute the joined program”
+
+## Decisions the program makes
+- If a header cannot be read → do not invent a fake one
+- If a goal is named → weld only what that goal needs
+
+## What a person would notice
+Programs built from real tool shapes, not guessed ones.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open the HTML skill and name one goal.

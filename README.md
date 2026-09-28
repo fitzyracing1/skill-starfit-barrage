@@ -1,2 +1,5 @@
 # skill-starfit-barrage
-Barrage plain-language clone of fitzyracing1/skill-starfit
+
+Barrage clone of [fitzyracing1/skill-starfit](https://github.com/fitzyracing1/skill-starfit).
+
+Read [listing.barrage](listing.barrage).
